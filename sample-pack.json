@@ -1,0 +1,145 @@
+{
+  "schema": 1,
+  "packId": "sample-pack",
+  "packVersion": 1,
+  "title": "サンプルパック（架空の内容）",
+  "updatedAt": "2026-11-18",
+  "groups": [
+    { "id": "sg1", "title": "架空の大単元 A", "order": 10 },
+    { "id": "sg2", "title": "架空の大単元 B", "order": 20 }
+  ],
+  "units": [
+    { "id": "sa-1", "groupId": "sg1", "title": "架空の単元 A-1 はじまり", "order": 1, "source": "text", "pages": "p.1-2" },
+    { "id": "sa-2", "groupId": "sg2", "title": "架空の単元 B-1 豆と器具", "order": 1, "source": "text", "pages": "p.3-4" }
+  ],
+  "questions": [
+    {
+      "id": "sa-1-001", "unitId": "sa-1", "type": "cloze", "order": 1, "page": "p.1",
+      "text": "架空のカフェ「サンプル堂」は、{{1}}年に、架空の街「ミドリ町」の{{2}}にある小さな店から始まった。",
+      "blanks": [
+        { "no": 1, "answer": "1980", "kind": "年号", "distractors": ["1970", "1985"] },
+        { "no": 2, "answer": "駅前通り", "kind": "地名" }
+      ],
+      "explanation": "架空の設定です。", "memo": "ミドリ町の駅前から始まった店"
+    },
+    {
+      "id": "sa-1-002", "unitId": "sa-1", "type": "cloze", "order": 2, "page": "p.1",
+      "text": "サンプル堂では、開店当初から持ち帰り用の袋を{{1}}。",
+      "blanks": [
+        { "no": 1, "answer": "用意していた", "kind": "用語", "options": ["用意していた", "用意していなかった"] }
+      ],
+      "explanation": "架空の設定です。"
+    },
+    {
+      "id": "sa-1-003", "unitId": "sa-1", "type": "cloze", "order": 3, "page": "p.2", "important": true,
+      "text": "看板メニューの「{{1}}」は、{{2}}を使った架空の飲み物である。",
+      "blanks": [
+        { "no": 1, "answer": "ミドリブレンド", "kind": "用語" },
+        { "no": 2, "answer": "ソルの豆", "kind": "豆" }
+      ],
+      "explanation": "架空の設定です。", "memo": "ミドリ＝緑色の看板"
+    },
+    {
+      "id": "sa-1-010", "unitId": "sa-1", "type": "mc", "order": 10, "page": "p.2",
+      "stem": "「ミドリ町」の名物は？",
+      "choices": ["ガラス細工", "ひまわり", "きのこ", "チーズ"],
+      "answer": [1],
+      "explanation": "架空の設定です。", "tags": ["名物"]
+    },
+    {
+      "id": "sa-1-011", "unitId": "sa-1", "type": "mc", "order": 11, "page": "p.2",
+      "stem": "架空の豆の産地として正しいものは？",
+      "choices": ["ドーム山", "北の海辺", "すべて正しい"],
+      "fixedOrder": true,
+      "answer": [2],
+      "explanation": "「すべて正しい」を含む選択肢は並び替えないで表示します。"
+    },
+    {
+      "id": "sa-1-020", "unitId": "sa-1", "type": "multi", "order": 20, "page": "p.3",
+      "stem": "架空の豆のうち、酸味が強いものをすべて選べ。",
+      "choices": ["ルナ", "ソル", "ミラ", "ネブ"],
+      "answer": [0, 2],
+      "explanation": "架空の設定です。"
+    },
+    {
+      "id": "sa-1-030", "unitId": "sa-1", "type": "tf", "order": 30, "page": "p.3",
+      "stem": "架空のカフェ「サンプル堂」は、開店以来ずっと同じ場所にある。",
+      "answer": true,
+      "explanation": "架空の設定です。"
+    },
+    {
+      "id": "sa-1-040", "unitId": "sa-1", "type": "order", "order": 40, "page": "p.4",
+      "stem": "架空の店の準備手順を、正しい順に並べよ。",
+      "items": ["豆を量る", "豆を挽く", "湯を沸かす", "抽出する", "提供する"],
+      "explanation": "架空の手順です。"
+    },
+    {
+      "id": "sa-2-001", "unitId": "sa-2", "type": "cloze", "order": 1, "page": "p.3",
+      "text": "架空の豆「ルナ」は、標高{{1}}メートルの畑で育つ。",
+      "blanks": [
+        { "no": 1, "answer": "1500", "kind": "数字", "distractors": ["900"] }
+      ],
+      "explanation": "架空の設定です。"
+    },
+    {
+      "id": "sa-2-002", "unitId": "sa-2", "type": "cloze", "order": 2, "page": "p.3",
+      "text": "架空の器具「ドリップポット」は、注ぎ口が{{1}}。",
+      "blanks": [
+        { "no": 1, "answer": "細い", "kind": "用語" }
+      ],
+      "explanation": "架空の設定です。"
+    },
+    {
+      "id": "sa-2-010", "unitId": "sa-2", "type": "mc", "order": 10, "page": "p.4",
+      "stem": "ドリップポットで使う湯の温度の目安は？",
+      "choices": ["70度", "80度", "90度", "100度"],
+      "answer": [1],
+      "explanation": "架空の設定です。"
+    },
+    {
+      "id": "sa-2-011", "unitId": "sa-2", "type": "mc", "order": 11, "page": "p.4",
+      "stem": "架空の器具「スケールA」の用途は？",
+      "choices": ["豆を量る", "湯を沸かす", "牛乳を泡立てる"],
+      "answer": [0],
+      "explanation": "架空の設定です。"
+    },
+    {
+      "id": "sa-2-020", "unitId": "sa-2", "type": "multi", "order": 20, "page": "p.4",
+      "stem": "架空の器具として正しいものをすべて選べ。",
+      "choices": ["ドリップポット", "スケールA", "ハンドミル", "アイスクラフト"],
+      "answer": [0, 1, 2],
+      "explanation": "架空の設定です。"
+    },
+    {
+      "id": "sa-2-021", "unitId": "sa-2", "type": "multi", "order": 21, "page": "p.4",
+      "stem": "架空の豆「ルナ」の特徴として当てはまるものをすべて選べ。",
+      "choices": ["標高が高い", "乾燥が強い", "雨が少ない", "低地で育つ"],
+      "answer": [0, 1, 2],
+      "explanation": "架空の設定です。"
+    },
+    {
+      "id": "sa-2-030", "unitId": "sa-2", "type": "tf", "order": 30, "page": "p.5",
+      "stem": "架空の豆「ルナ」は、低地で育つ。",
+      "answer": false,
+      "explanation": "架空の設定です。"
+    },
+    {
+      "id": "sa-2-031", "unitId": "sa-2", "type": "tf", "order": 31, "page": "p.5",
+      "stem": "架空の器具「スケールA」は、重さを量るために使う。",
+      "answer": true,
+      "explanation": "架空の設定です。"
+    },
+    {
+      "id": "sa-2-040", "unitId": "sa-2", "type": "order", "order": 40, "page": "p.5",
+      "stem": "架空の抽出の流れを、正しい順に並べよ。",
+      "items": ["ドリッパーをセット", "蒸らす", "湯を注ぐ", "カップに移す"],
+      "explanation": "架空の手順です。"
+    },
+    {
+      "id": "sa-2-041", "unitId": "sa-2", "type": "order", "order": 41, "page": "p.5",
+      "stem": "架空の豆の処理の流れを、正しい順に並べよ。",
+      "items": ["収穫", "乾燥", "選別", "焙煎"],
+      "explanation": "架空の手順です。"
+    }
+  ]
+}

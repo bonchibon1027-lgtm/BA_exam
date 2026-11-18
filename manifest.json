@@ -1,0 +1,16 @@
+{
+  "name": "BAドリル",
+  "short_name": "BAドリル",
+  "description": "ブラックエプロンチャレンジ対策の演習アプリ（データは端末の中だけに保存）",
+  "lang": "ja",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#1E3932",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
