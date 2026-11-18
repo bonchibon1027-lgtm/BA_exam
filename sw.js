@@ -1,5 +1,5 @@
 // Service Worker：オフライン対応と、新しいバージョンの検知
-const VERSION = 'ba-drill-v1.0.2';
+const VERSION = 'ba-drill-v1.0.3';
 const ASSETS = [
   './', 'index.html', 'style.css', 'db.js', 'pack.js', 'quiz.js', 'stats.js', 'app.js',
   'manifest.json', 'icons/icon-192.png', 'icons/icon-512.png',
