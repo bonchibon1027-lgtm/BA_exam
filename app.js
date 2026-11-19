@@ -354,8 +354,8 @@ function sheetHtml(item, ui) {
   if (item.kind !== 'cloze' || item.mode !== 'choose' || ui.open == null) return '';
   const b = item.blanks.find(x => x.no === ui.open);
   if (!b) return '';
-  return `<div class="sheet" role="dialog">
-    <div class="sheet-head"><b>空欄${circ(b.no)}の答え</b><button type="button" data-act="closeSheet" class="sm">閉じる</button></div>
+  return `<div class="pickpanel">
+    <div class="pickpanel-head"><b>空欄${circ(b.no)}の答え</b><button type="button" data-act="closeSheet" class="sm">閉じる</button></div>
     ${b.choices.map((t, i) => `<button type="button" class="opt" data-act="pick" data-no="${b.no}" data-i="${i}">${esc(t)}</button>`).join('')}
   </div>`;
 }
@@ -489,10 +489,10 @@ function vQuestion() {
     <article class="card">
       <div class="qhead">${badges}<span class="muted">${esc(unit ? unit.title : '')}${q.page ? ' ・ ' + esc(q.page) : ''}</span></div>
       ${itemBody(item, s.ui, s.checked)}
+      ${s.checked ? '' : sheetHtml(item, s.ui)}
     </article>
     ${s.checked ? feedbackHtml(item, s.answers[s.idx]) : ''}
-    <div class="actions">${action}</div>
-    ${s.checked ? '' : sheetHtml(item, s.ui)}`, s.title);
+    <div class="actions">${action}</div>`, s.title);
 }
 
 function clickBlank(no) {
